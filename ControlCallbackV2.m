@@ -75,7 +75,7 @@ if ((timenow - lasttime) > (dt))
     T = m*((desiredposition(3)+g))/(cos(ang(1))*cos(ang(2)));
     torque = (KPang.*Aerror + KDang.*(Aerror-lastAerror)/dt + KIang.*(Aerrsum)).*I; %degrees
     m1 = T/4-torque(2)/(l)+torque(3)/4; %*k/(4*b); I don't think this correction is necessary, it levels out gains a bit
-    m2 = T/4-torque(1)/(l)-torque(3)/4;
+    m2 = T/4-torque(1)/(l)-torque(3)/4;  %seperate thrusts between couples
     m3 = T/4+torque(2)/(l)+torque(3)/4;
     m4 = T/4+torque(1)/(l)-torque(3)/4;
     setspeed()

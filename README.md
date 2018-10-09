@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README #
 
 ![What a machine!](https://jasondekarske.com/assets/side.jpg)
@@ -26,7 +27,7 @@ c.addlistener( 1 , 'ControlCallbackV2' );
 rbx = -double( evnt.data.RigidBodies( rbnum ).y );`
 ```
 * Be sure to add buttons for `c.enable(0)` and `c.disable(0)` otherwise the script will not terminate and you will have to kill matlab via task manager and you'll be unhappy because you forget to do it properly after writing sticky notes to remind yourself.
-* Use [set](https://www.mathworks.com/help/matlab/ref/set.html) and [drawnow](https://www.mathworks.com/help/matlab/ref/drawnow.html) functions for easy plotting and GUI stuff! 
+* Use [set](https://www.mathworks.com/help/matlab/ref/set.html) and [drawnow](https://www.mathworks.com/help/matlab/ref/drawnow.html) functions for easy plotting and GUI stuff! *update: Don't use gui stuff while flying!! it adds significant computing time*
 
 
 ### Who should you contact when nothing works and is poorly commented?
@@ -34,3 +35,7 @@ rbx = -double( evnt.data.RigidBodies( rbnum ).y );`
 
 
 *UW BADGER Lab 1/25/2018*
+=======
+# Quadcopter
+Open-source flight controller software based on Optitrack position tracking
+>>>>>>> Github/master

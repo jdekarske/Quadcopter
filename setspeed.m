@@ -3,7 +3,7 @@ global s m1 m2 m3 m4 tm1 tm2 tm3 tm4 abort rbz abortbtn motorsonbtn axes2 ang
 %convert desired angular velocity to pwm
 
 % 
-pwm1 = m1*166.32 + 1033; %THIS NEEDS TO BE CALIBRATED
+pwm1 = m1*166.32 + 1033; %THIS NEEDS TO BE CALIBRATED BETTER
 pwm2 = m2*166.32 + 1033;
 pwm3 = m3*166.32 + 1033;
 pwm4 = m4*166.32 + 1033;
